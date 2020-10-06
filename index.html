@@ -117,30 +117,38 @@
     margin: 120px auto;
     text-align: center;
 }
+.gy-grid {
+            display: grid;
+}
         .col svg {width: 80px;}
-        footer{background: var(--main-color);text-align: center;}
+        footer{background: var(--main-color);text-align: center;color:fff;padding: 0 24px;}
         @media (min-width:768px) {
             .head {
                 height: calc(73vh - 16px);
                 padding-top: 27vh;
             }
-            .gy-grid {
-            display: grid;
+            .grid-3 {
             grid-template-columns: repeat(3,1fr);
+        }
+        .grid-3-4 {
+            grid-template-columns: 3fr 4fr;
         }
         }
     </style>
 </head>
 
 <body>
-    <div class="head">
+    <div class="head gy-grid grid-3-4">
+        <div>
         <h1>Best Dental Clinic in Gurgaon and Delhi</h1>
         <h2>Dental Destination</h2>
+    </div>
+        <div><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#e6e6e6" d="M171 316v-86h136v69z"/><path d="M473 370l-140-37-140 14c-14 2-28-3-39-12L16 212c-5-5-7-11-7-18 0-13 10-23 23-23h2c5 0 11 2 15 6l139 122 135-16c7-1 13-1 19 1l143 36c11 2 18 12 18 24v2l-1 8c-4 12-17 19-29 16z" fill="#4398d1"/><path d="M77 461h205v34H43c0-19 15-34 34-34z" fill="#7bbdd1"/><path d="M469 495H282V375l147 34c24 5 40 26 40 50v36z" fill="#a2daeb"/><path fill="#7bbdd1" d="M198 401l84 17v-43l-80-17z"/><path d="M171 345v38a26 26 0 0050 12l26-53-54 5c-7 1-15 0-22-2z" fill="#a2daeb"/><g fill="#e6e6e6"><path d="M290 205h-17V34c0-14 12-25 26-25h185a28 28 0 019 55l-78 26c-3 1-5 4-5 8v21h-17V98c0-11 7-21 17-25l77-25a11 11 0 00-3-22H299c-5 0-9 3-9 8v171zM452 188v-17c5 0 9-4 9-9v-25a9 9 0 00-17 0v17h-17v-17a26 26 0 1151 0v25c0 14-12 26-26 26z"/><path d="M350 188c-14 0-26-12-26-26v-25a26 26 0 1151 0v17h-17v-17a9 9 0 00-17 0v25c0 5 4 9 9 9v17z"/></g><circle cx="401.1" cy="153.6" r="42.7" fill="#a2daeb"/><path fill="#86c8dc" d="M393 145h17v17h-17z"/><path d="M256 230h-17v-34a9 9 0 00-17 0v9h-17v-9a26 26 0 1151 0v34z" fill="#e6e6e6"/><path fill="#7bbdd1" d="M188 367h17v17h-17z"/><path d="M469 459c0-24-16-45-40-50l-14-3c-26 40-63 71-107 89h161v-36z" fill="#86c8dc"/><path fill="#7bbdd1" d="M307 452h162v17H307z"/><path d="M487 311l-143-35c-7-2-14-3-22-2l-131 16L55 170c-6-5-13-8-21-8h-2a32 32 0 00-21 56l137 123c4 4 9 7 14 9v33a35 35 0 0052 31l59 11v27H77c-24 0-43 19-43 43 0 5 4 8 9 8h426c5 0 9-3 9-8v-36c0-28-19-52-47-58l-148-34-35-7 5-10 79-9 139 37 8 1c18 0 33-15 33-33v-2c0-16-10-29-25-33zM77 469h196v17H53c3-10 13-17 24-17zm383-17H307v17h154v17H290V386l138 31c17 4 30 18 32 35zm-187-70v26l-45-9 12-23 33 6zm-60 9a18 18 0 01-34-8v-27h15l39-4-20 39zm282-45a16 16 0 01-20 16l-140-37-3-1-140 15c-12 1-24-3-33-11L22 205a15 15 0 0110-26h2c3 0 7 2 10 4l138 122c2 2 4 2 7 2l135-16 16 1 143 36c7 2 12 8 12 16v2z"/><path d="M188 367h17v17h-17zM484 9H299c-14 0-26 11-26 25v171h17V34c0-5 4-8 9-8h185a11 11 0 013 22l-77 25c-10 4-17 14-17 25v14c-8 1-16 5-22 11a26 26 0 00-47 14v25c0 14 12 26 26 26v-17c-5 0-9-4-9-9v-25a9 9 0 0117 0v17a43 43 0 0086 0v-17a9 9 0 0117 0v25c0 5-4 9-9 9v17c14 0 26-12 26-26v-25a26 26 0 00-47-14c-6-6-13-10-21-11V98c0-4 2-7 5-8l78-26a28 28 0 00-9-55zm-57 145a26 26 0 11-52 0 26 26 0 0152 0z"/><path d="M393 145h17v17h-17zM179 239h120v26h17v-35c0-4-4-8-9-8h-51v-26a26 26 0 10-51 0v9h17v-9a9 9 0 0117 0v26h-68c-5 0-9 4-9 8v17h17v-8z"/></svg></div>
     </div>
     <div class="container">
         <h2>SERVICES</h2>
         <p>Here are some of our most in demand services.</p>
-        <div class="gy-grid">
+        <div class="gy-grid grid-3">
             <div class="col">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M210 14c-9-4-19-5-28-5-39 0-71 31-71 70 0 32 7 64 22 93l12 41h222l12-41c15-29 22-61 22-93 0-39-32-70-71-70-9 0-19 1-28 5-29 13-63 13-92 0z" fill="#e6e6e6"/><path d="M154 94h-17V84c0-21 11-39 29-49l9 15c-13 7-21 19-21 34v10z" fill="#f7f7f7"/><path fill="#3e8cc7" d="M282 503h-52l-17-42V265h86v196z"/><g fill="#4398d1"><path d="M334 307l-2 17-154-17 2-17zM334 358l-2 17-154-17 2-17zM334 410l-2 17-154-17 2-17zM334 461l-2 17-154-17 2-17z"/></g><g fill="#dedede"><path d="M179 213h154v52H179zM375 24a365 365 0 01-200 189h192l12-41c15-29 22-61 22-93 0-21-10-41-26-55z"/></g><path fill="#d1d1d1" d="M256 213h77v52h-77z"/><path d="M330 0c-11 0-21 2-31 6-27 12-59 12-86 0a79 79 0 00-111 73c0 33 8 66 23 96l12 41c1 3 4 6 8 6h26v43c0 4 3 8 8 8h26v20l-25-3-2 17 27 3v34l-25-3-2 17 27 3v34l-25-2-2 17 27 3v34l-25-3-2 17 27 3 17 43c2 3 5 5 8 5h52c3 0 6-2 8-5l12-32 30 3 2-17-27-3v-34l25 3 2-17-27-3v-34l25 2 2-17-27-3v-34l25 3 2-17-27-3v-31h26c5 0 8-4 8-8v-43h26c4 0 7-3 8-6l12-41c15-30 23-63 23-96 0-43-36-79-80-79zm-54 495h-40l-11-29 60 7-9 22zm14-39l-68-8v-34l68 8v34zm0-51l-68-8v-34l68 8v34zm0-51l-68-8v-34l68 8v34zm0-52l-68-7v-22h68v29zm34-46H188v-34h136v34zm48-88l-1 1-10 36H151l-10-36-1-1c-13-28-20-58-21-89a62 62 0 0187-57c32 14 68 14 100 0a62 62 0 0187 57c-1 31-8 61-21 89z"/><path d="M137 84v10h17V84c0-15 8-27 21-34l-9-15a56 56 0 00-29 49z"/></svg>
                     <h3>Dental Implants</h3>
