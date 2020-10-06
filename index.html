@@ -22,7 +22,9 @@
             line-height: 1.15;
             -webkit-text-size-adjust: 100%;
         }
-
+        :root {
+            --main-color:  #7d1fa5;
+        }
         body {
             font-size: 18px;
             line-height: 1.5;
@@ -99,7 +101,7 @@
         .head {
             min-height: 200px;
             height: calc(85vh - 16px);
-            background: #7d1fa5;
+            background:var(--main-color);
             text-align: center;
             color: #fff;
             padding: 16px;
@@ -116,6 +118,7 @@
     text-align: center;
 }
         .col svg {width: 80px;}
+        footer{background: var(--main-color);text-align: center;}
         @media (min-width:768px) {
             .head {
                 height: calc(73vh - 16px);
@@ -179,7 +182,7 @@
         </div>
     </div>
     <footer><span>Devepoled by <a href="https://yadavgaurav.com">Gaurav Yadav<span>
-        <span><a href="https://www.pokemongroup.com">Partner WebSite Pokemon Group</a></span></footer>
+        <span>Partner WebSite <a href="https://www.pokemongroup.com">Pokemon Group</a></span></footer>
 </body>
 
 </html>
