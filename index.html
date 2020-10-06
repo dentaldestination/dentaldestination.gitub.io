@@ -122,7 +122,11 @@
         .col svg {width: 80px;}
         footer{background: var(--main-color);text-align: center;color:#fff;padding: 24px 0;}
         footer a {color: #fff;}
+        header .grid-2 {grid-template-columns: 1fr 1fr;}
         @media (min-width:768px) {
+            .grid-2 {
+    grid-template-columns: 1fr 1fr;
+}
             .grid-3 {
             grid-template-columns: repeat(3,1fr);
         }
@@ -134,7 +138,7 @@
 </head>
 
 <body>
-    <header><span>Dental Destination</span><button>9899803838</button></header>
+    <header class="gy-grid grid-2"><span>Dental Destination</span><button>9899803838</button></header>
     <div class="head gy-grid grid-3-4">
         <div>
         <h1>Best Dental Clinic in Gurgaon and Delhi</h1>
