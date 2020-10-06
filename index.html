@@ -99,15 +99,14 @@
         }
 
         .head {
-            min-height: 200px;
-            height: calc(85vh - 16px);
+            min-height: calc(100vh - 16px);
             background:var(--main-color);
             text-align: center;
+            align-items: center;
             color: #fff;
             padding: 16px;
-            padding-top: 15vh;
         }
-
+        .head svg {max-width: 480px;}
         .head a {
             color: #fff;
         }
@@ -121,12 +120,9 @@
             display: grid;
 }
         .col svg {width: 80px;}
-        footer{background: var(--main-color);text-align: center;color:fff;padding: 0 24px;}
+        footer{background: var(--main-color);text-align: center;color:#fff;padding: 24px 0;}
+        footer a {color: #fff;}
         @media (min-width:768px) {
-            .head {
-                height: calc(73vh - 16px);
-                padding-top: 27vh;
-            }
             .grid-3 {
             grid-template-columns: repeat(3,1fr);
         }
